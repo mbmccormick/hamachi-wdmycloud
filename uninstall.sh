@@ -2,11 +2,6 @@
 
 HAMACHI_DST=/opt/logmein-hamachi
 
-if [ ! -x /usr/lib/lsb/install_initd ] ; then
-        echo LogMeIn Hamachi needs lsb package;
-        exit 1;
-fi
-
 echo Stopping LogMeIn Hamachi engine ..
 /etc/init.d/logmein-hamachi stop
 
